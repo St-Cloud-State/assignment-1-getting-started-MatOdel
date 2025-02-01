@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Book Reviews</title>
+
+</head>
+
+<body>
+    <h1>Acme Financial Corp</h1>
+
+	<div id="message"></div>
+
+	
+    <div id="addApp">
+        <h2>Accept Application</h2>
+        <input type="text" id="name" placeholder="name">
+        <input type="text" id="zipcode" placeholder="zipcode">
+        <button onclick="addApp()">Accept</button>
+    </div>
+
+    
+
+
+    <body>
+        <form>
+            <h2>Change Status</h2>
+            <label for="appID">Application ID:</label>
+            <input type="text" id="APPID" name="textInput" placeholder="app ID">
+            
+            <p>New Status:</p>
+            <input type="radio" id="processing" name="selection" value="1">
+            <label for="processing">processing</label><br>
+            
+            <input type="radio" id="accepted" name="selection" value="2">
+            <label for="accepted">accepted</label><br>
+            
+            <input type="radio" id="rejected" name="selection" value="3">
+            <label for="rejected">rejected</label><br>
+
+            <br>
+            <button type="submit">Change</button>
+        </form>
+
+
+       
+        
+        <div id="AppID">
+            <h2>Check Status</h2>
+            <input type="text" id="appID" placeholder="app ID">
+            
+            <button onclick="check_Status()">Check</button>
+        </div>
+
+
+    <script src="{{ url_for('static', filename='scriptHW.js') }}"></script>
+</body>
+
+</html>
